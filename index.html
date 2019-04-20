@@ -11,20 +11,97 @@
   <meta property="og:url" content="https://www.secondwindinteractive.com"/>
   <meta property="og:site_name" content="Second Wind"/>
   <meta property="og:type" content="Website"/>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #000;
+  color: #fff;
+  font-family: "Avenir Light";
+  font-size: 15px;
+  height: 100%;
+  letter-spacing: 1px;
+}
+
+body {
+  height: 100%;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#root {
+  text-align: center;
+  width: 740px;
+}
+
+header {
+}
+
+main {
+  border-bottom: 3px solid #fff;
+  border-top: 3px solid #fff;
+  margin-bottom: 35px;
+  margin-top: 20px;
+  padding: 55px 0;
+}
+
+footer {
+}
+
+#header-image {
+  width: 570px;
+}
+
+#jit-link {
+}
+
+#jit-image {
+  width: 100%;
+}
+
+#footer-link {
+  color: #fff;
+}
+
+#footer-link:visited {
+  color: #fff;
+}
+</style>
+
 </head>
 <body>
-  <header>
-    <img alt="logo_big.png" src="asserts/just_in_time_incorporated.webp"/>
-  </header>
-  <main>
-    <a href="https://www.justintimegame.com" target="_self">
-      <img alt="just_in_time_incorporated.jpg" src="https://static.wixstatic.com/media/35e859_7d8b52e21b354a528eea68a46c9ffb07~mv2.jpg/v1/fill/w_979,h_422,al_c,q_85/just_in_time_incorporated.webp"/>
-    </a>
-  </main>
-  <footer>
-    <a href="mailto:info@secondwindinteractive.com" target="_self" data-content="info@secondwindinteractive.com" data-type="mail">
-      info@secondwindinteractive.com
-    </a>
-  </footer>
+  <div id="root">
+    <header>
+      <img id="header-image" alt="Second Wind Interactive" src="assets/logo_big.webp"/>
+    </header>
+    <main>
+      <a id="jit-link" href="https://www.justintimegame.com" target="_self">
+        <img id="jit-image" alt="Just In Time Incorporated, A hilarious VR game about 'Death Prevention Insurance' from Second Wind Interactive" src="assets/just_in_time_incorporated.webp"/>
+      </a>
+    </main>
+    <footer>
+      <a id="footer-link" href="mailto:info@secondwindinteractive.com" target="_self" data-content="info@secondwindinteractive.com" data-type="mail">
+        info@secondwindinteractive.com
+      </a>
+    </footer>
+  </div>
 </body>
 </html>
