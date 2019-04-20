@@ -49,7 +49,7 @@ body {
 
 #root {
   text-align: center;
-  width: 740px;
+  max-width: 740px;
 }
 
 header {
@@ -67,7 +67,7 @@ footer {
 }
 
 #header-image {
-  width: 570px;
+  max-width: 570px;
 }
 
 #jit-link {
@@ -83,6 +83,16 @@ footer {
 
 #footer-link:visited {
   color: #fff;
+}
+
+@media only screen and (max-width: 740px) {
+  #header-image {
+    width: 100%;
+  }
+
+  #jit-image {
+    width: 100%;
+  }
 }
 </style>
 
