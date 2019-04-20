@@ -1,10 +1,12 @@
 <!doctype html>
 <html>
 <head>
+  <meta charset="utf-8"/>
+
   <title>Second Wind Interactive</title>
   <link rel="canonical" href="https://www.secondwindinteractive.com">
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
-  <meta charset="utf-8"/>
+
   <meta name="description" content="Purveyors of fine gaming experiences."/>
   <meta property="og:title" content="Second Wind Interactive"/>
   <meta property="og:description" content="Purveyors of fine gaming experiences."/>
@@ -30,6 +32,7 @@ html {
 
 body {
   height: 100%;
+  text-align: center;
 
   display: -webkit-box;
   display: -webkit-flex;
@@ -45,11 +48,6 @@ body {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-#root {
-  text-align: center;
-  max-width: 740px;
 }
 
 header {
@@ -74,7 +72,7 @@ footer {
 }
 
 #jit-image {
-  width: 100%;
+  max-width: 740px;
 }
 
 #footer-link {
@@ -85,21 +83,12 @@ footer {
   color: #fff;
 }
 
-@media only screen and (max-width: 740px) {
-  #header-image {
-    width: 100%;
-  }
-
-  #jit-image {
-    width: 100%;
-  }
-}
-
-@media
+@media only screen and (max-width: 600px),
+@media only screen and
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) { 
-  #root {
-    max-width: none;
+  html {
+    font-size: 18px;
   }
 
   #header-image {
@@ -110,12 +99,11 @@ footer {
     width: 100%;
   }
 }
-
 </style>
 
 </head>
 <body>
-  <div id="root">
+  <div>
     <header>
       <img id="header-image" alt="Second Wind Interactive" src="assets/logo_big.png"/>
     </header>
